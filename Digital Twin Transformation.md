@@ -38,7 +38,7 @@ The conventional approach — picking live projects, changing processes mid-flig
 
 The twin approach uniquely solves four problems that kill most transformations:
 
-**The data problem.** Most AI transformations fail because leadership asks "what's the ROI?" and nobody has real numbers. Shadow runs on past projects give you actual comparative data — before you've risked anything.
+**The data problem.** Most AI transformations fail because leadership asks "what's the ROI?" and nobody has real numbers. Shadow runs on past projects give you actual comparative data — before you've risked anything. That comparison only holds if the twin can actually _read_ the replayed engagement with fidelity, which is a knowledge-engine job — effectively an agentic RAG system built on a knowledge graph — not something a plain vector index can do.
 
 **The people problem.** Developers experiment with the AI-Native model on replay projects where there's no client pressure, no deadline stress, and no fear of breaking things. By the time you go live, they've already built muscle memory — adoption becomes pull, not push.
 
@@ -71,6 +71,8 @@ Capture across these dimensions:
 On top of this data, build a **process simulation model** — not just a BI report. Tools like AnyLogic, Simul8, or even a well-structured agent-based model in Python can simulate how work flows through your organisation. At minimum, model it as a **queuing system**: work items enter, pass through SDLC stages, each stage has a throughput rate and failure rate, and bottlenecks emerge naturally from the model.
 
 A structured knowledge base — even well-organised markdown documents — works as a starting point. A custom internal tool is better long-term.
+
+Past the starting point, the substrate that actually makes Layer 1 useful is a **knowledge engine** — an agentic RAG system built on a knowledge graph with an ontology layer and session memory. Vanilla document RAG (embed chunks, search by vector similarity) retrieves snippets but cannot hold an engagement in working memory across a six-month replay, and cannot reason about the relationships between tickets, PRs, specs, decisions, and people that the twin depends on. This is what lets Layer 1 (model as-is) and Layer 3 (shadow runs) actually work with fidelity — see [[Cognee Knowledge Engine for the Digital Twin]] for the concrete case.
 
 ### Layer 2 — The To-Be Twin (Design the AI-Native Model)
 
@@ -214,4 +216,5 @@ Most organisations try to transform systems they don't fully understand — whic
 | Date | Author | Change |
 |---|---|---|
 | 2026-04-12 | Manas Pradhan | Added revision history section. |
+| 2026-04-12 | Manas Pradhan | Infused knowledge-engine-as-agentic-RAG framing: added a clause to the "data problem" paragraph and a new paragraph after Layer 1's knowledge-base note. Cross-referenced the Cognee essay. |
 

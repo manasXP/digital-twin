@@ -48,6 +48,8 @@ The spec quality determines everything downstream. Invest disproportionately her
 
 An added benefit: good specs solve the **context collapse** problem on long projects. AI tools lose coherence across a 6-month engagement. A living spec document fed as context into every AI interaction keeps the output consistent and grounded.
 
+But the "living spec" is the first-order fix, not the end state. On a real engagement the spec is not one document — it is specs, tickets, PRs, transcripts, ADRs, and design notes, all changing weekly. Cramming that into a prompt window does not scale, and vanilla RAG — embed chunks, run vector similarity — retrieves snippets without understanding the relationships between them. The mature form of the fix is a **knowledge engine**: effectively an _agentic RAG_ system where agents plan retrieval against a structured knowledge graph with an ontology layer and session memory, rather than matching embeddings against a blob of text. Understanding over recall, citations over hallucinations, coherent across the full six-month engagement. See [[Cognee Knowledge Engine for the Digital Twin]] for why this substrate belongs specifically on the twin side and how to think about it concretely.
+
 ---
 
 ### Phase 2 — Pilot on Real Projects (Month 2–4)
@@ -78,6 +80,7 @@ Before you even start the pilots formally, spend one week having your best 2–3
 |AI code review|CodeRabbit, Ellipsis, or Sourcery|
 |Test generation|CodiumAI, Diffblue (Java), Playwright AI|
 |Documentation|Mintlify, Swimm, or direct LLM pipelines|
+|**Knowledge engine (agentic RAG substrate)**|Cognee or equivalent — holds the engagement as a queryable knowledge graph with ontology and session memory|
 
 **Avoid** buying an all-in-one "AI delivery platform." They are mostly premature. Assemble the stack yourself and standardize on it. More importantly — keep your **methodology tool-agnostic**. Your spec format, review process, and quality gates should work regardless of whether you're using Claude, GPT, or whatever comes next. The tooling landscape changes monthly.
 
@@ -215,4 +218,5 @@ The transformation touches hiring, pricing, tooling, training, and culture simul
 | Date | Author | Change |
 |---|---|---|
 | 2026-04-12 | Manas Pradhan | Added revision history section. |
+| 2026-04-12 | Manas Pradhan | Infused knowledge-engine-as-agentic-RAG framing into Phase 1 (after the context-collapse passage) and added a knowledge-engine row to the Phase 3 practical stack table. Cross-referenced the Cognee essay. |
 

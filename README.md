@@ -1,6 +1,6 @@
 # Digital Twin
 
-A writing and research repository on **digital-twin-led organisational transformation** for IT services firms — specifically, how to adopt an AI-Native delivery model by building a shadow organisation (a "digital twin"), validating it through replays of past projects, and only then crossing the new model over into live delivery.
+A writing and research repository on **digital-twin-led organizational transformation** for IT services firms — specifically, how to adopt an AI-Native delivery model by building a shadow organization (a "digital twin"), validating it through replays of past projects, and only then crossing the new model over into live delivery.
 
 The repo lives inside an Obsidian vault and mixes long-form essays, formal series documents, and diagrams.
 
